@@ -1,6 +1,9 @@
 package models
 
-import "time"
+import (
+	"log"
+	"time"
+)
 
 type User struct {
 	ID        int
@@ -20,5 +23,16 @@ func (u *User) CreateUser() (err error) {
 		created_at) values (?, ?, ?, ?, ?)`
 
 	// Dbは modelsパッケージ内(base.go)に存在するので，使用できる
-	_, err := Db.Exec(cmd)
+	_, err = Db.Exec(cmd,
+		createUUID(),
+		u.Name,
+		u.Email,
+		Encrypt(u.PassWord),
+		time.Now())
+
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	return err
 }
