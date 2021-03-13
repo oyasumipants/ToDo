@@ -38,7 +38,7 @@ func (u *User) CreateUser() (err error) {
 }
 
 func GetUser(id int) (user User, err error) {
-	user = User{}
+	user = User{} // ここで構造体を作成している
 	cmd := `select * from users where id = ?`
 	err = Db.QueryRow(cmd, id).Scan(
 		&user.ID,
@@ -49,4 +49,23 @@ func GetUser(id int) (user User, err error) {
 		&user.CreatedAt,
 	)
 	return user, err
+}
+
+// func名前の前の() はレシーバー 構造体のメソッド
+func (u *User) UpdateUser() (err error) {
+	cmd := `update users set name = ?, email = ? where id = ?`
+	_, err = Db.Exec(cmd, u.Name, u.Email, u.ID)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	return err
+}
+
+func (u *User) DeleteUser() (err error) {
+	cmd := `delete from users where id = ?`
+	_, err = Db.Exec(cmd, u.ID)
+	if err != nil {
+		log.Fatalln(err)
+	}
+	return err
 }
