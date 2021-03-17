@@ -2,11 +2,9 @@ package controllers
 
 import (
 	"net/http"
-	"text/template"
 )
 
 // ハンドラー
 func top(w http.ResponseWriter, r *http.Request) {
-	t, _ := template.ParseFiles("app/views/templates/top.html")
-	t.Execute(w, nil)
+	generateHTML(w, "Hello", "layout", "top")
 }
