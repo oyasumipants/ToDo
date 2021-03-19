@@ -659,3 +659,267 @@ net/http.(*conn).serve(0xc0000e85a0, 0x45ac160, 0xc000097b40)
 	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1925 +0x8ad
 created by net/http.(*Server).Serve
 	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2969 +0x36c
+2021/03/19 17:47:48 server.go:3095: http: panic serving [::1]:59230: template: login.html:1: unexpected "}}" in define clause
+goroutine 20 [running]:
+net/http.(*conn).serve.func1(0xc0000baf00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d06e0, 0xc000192380)
+	/usr/local/Cellar/go/1.15.2/libexec/src/runtime/panic.go:975 +0x3e9
+text/template.Must(...)
+	/usr/local/Cellar/go/1.15.2/libexec/src/text/template/helper.go:23
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.generateHTML(0x45b02e0, 0xc0001aa2a0, 0x0, 0x0, 0xc0000f9b28, 0x3, 0x3)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/server.go:17 +0x2be
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.login(0x45b02e0, 0xc0001aa2a0, 0xc00007eb00)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/route_auth.go:34 +0xae
+net/http.HandlerFunc.ServeHTTP(0x4550f40, 0x45b02e0, 0xc0001aa2a0, 0xc00007eb00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47d3620, 0x45b02e0, 0xc0001aa2a0, 0xc00007eb00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010a000, 0x45b02e0, 0xc0001aa2a0, 0xc00007eb00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000baf00, 0x45b0de0, 0xc000190000)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2969 +0x36c
+2021/03/19 17:47:48 server.go:3095: http: panic serving [::1]:59494: template: login.html:1: unexpected "}}" in define clause
+goroutine 11 [running]:
+net/http.(*conn).serve.func1(0xc000212000)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d06e0, 0xc000012350)
+	/usr/local/Cellar/go/1.15.2/libexec/src/runtime/panic.go:975 +0x3e9
+text/template.Must(...)
+	/usr/local/Cellar/go/1.15.2/libexec/src/text/template/helper.go:23
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.generateHTML(0x45b02e0, 0xc0002060e0, 0x0, 0x0, 0xc000053b28, 0x3, 0x3)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/server.go:17 +0x2be
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.login(0x45b02e0, 0xc0002060e0, 0xc00007ec00)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/route_auth.go:34 +0xae
+net/http.HandlerFunc.ServeHTTP(0x4550f40, 0x45b02e0, 0xc0002060e0, 0xc00007ec00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47d3620, 0x45b02e0, 0xc0002060e0, 0xc00007ec00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010a000, 0x45b02e0, 0xc0002060e0, 0xc00007ec00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000212000, 0x45b0de0, 0xc000026600)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2969 +0x36c
+2021/03/19 17:47:48 server.go:3095: http: panic serving [::1]:59495: template: login.html:1: unexpected "}}" in define clause
+goroutine 44 [running]:
+net/http.(*conn).serve.func1(0xc0001f6000)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d06e0, 0xc000192500)
+	/usr/local/Cellar/go/1.15.2/libexec/src/runtime/panic.go:975 +0x3e9
+text/template.Must(...)
+	/usr/local/Cellar/go/1.15.2/libexec/src/text/template/helper.go:23
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.generateHTML(0x45b02e0, 0xc0001aa380, 0x0, 0x0, 0xc00018ab28, 0x3, 0x3)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/server.go:17 +0x2be
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.login(0x45b02e0, 0xc0001aa380, 0xc0001c1000)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/route_auth.go:34 +0xae
+net/http.HandlerFunc.ServeHTTP(0x4550f40, 0x45b02e0, 0xc0001aa380, 0xc0001c1000)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47d3620, 0x45b02e0, 0xc0001aa380, 0xc0001c1000)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010a000, 0x45b02e0, 0xc0001aa380, 0xc0001c1000)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001f6000, 0x45b0de0, 0xc0001907c0)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2969 +0x36c
+2021/03/19 17:47:49 server.go:3095: http: panic serving [::1]:59499: template: login.html:1: unexpected "}}" in define clause
+goroutine 27 [running]:
+net/http.(*conn).serve.func1(0xc0000bb040)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d06e0, 0xc0000992a0)
+	/usr/local/Cellar/go/1.15.2/libexec/src/runtime/panic.go:975 +0x3e9
+text/template.Must(...)
+	/usr/local/Cellar/go/1.15.2/libexec/src/text/template/helper.go:23
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.generateHTML(0x45b02e0, 0xc00010a380, 0x0, 0x0, 0xc00018ab28, 0x3, 0x3)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/server.go:17 +0x2be
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.login(0x45b02e0, 0xc00010a380, 0xc0001c1700)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/route_auth.go:34 +0xae
+net/http.HandlerFunc.ServeHTTP(0x4550f40, 0x45b02e0, 0xc00010a380, 0xc0001c1700)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47d3620, 0x45b02e0, 0xc00010a380, 0xc0001c1700)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010a000, 0x45b02e0, 0xc00010a380, 0xc0001c1700)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000bb040, 0x45b0de0, 0xc000190b40)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2969 +0x36c
+2021/03/19 17:47:49 server.go:3095: http: panic serving [::1]:59500: template: login.html:1: unexpected "}}" in define clause
+goroutine 28 [running]:
+net/http.(*conn).serve.func1(0xc0000bb0e0)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d06e0, 0xc000012430)
+	/usr/local/Cellar/go/1.15.2/libexec/src/runtime/panic.go:975 +0x3e9
+text/template.Must(...)
+	/usr/local/Cellar/go/1.15.2/libexec/src/text/template/helper.go:23
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.generateHTML(0x45b02e0, 0xc0001aa460, 0x0, 0x0, 0xc000189b28, 0x3, 0x3)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/server.go:17 +0x2be
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.login(0x45b02e0, 0xc0001aa460, 0xc000100d00)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/route_auth.go:34 +0xae
+net/http.HandlerFunc.ServeHTTP(0x4550f40, 0x45b02e0, 0xc0001aa460, 0xc000100d00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47d3620, 0x45b02e0, 0xc0001aa460, 0xc000100d00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010a000, 0x45b02e0, 0xc0001aa460, 0xc000100d00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000bb0e0, 0x45b0de0, 0xc0000cea00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2969 +0x36c
+2021/03/19 17:47:49 server.go:3095: http: panic serving [::1]:59501: template: login.html:1: unexpected "}}" in define clause
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0xc0001f60a0)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d06e0, 0xc000012500)
+	/usr/local/Cellar/go/1.15.2/libexec/src/runtime/panic.go:975 +0x3e9
+text/template.Must(...)
+	/usr/local/Cellar/go/1.15.2/libexec/src/text/template/helper.go:23
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.generateHTML(0x45b02e0, 0xc0001aa540, 0x0, 0x0, 0xc000189b28, 0x3, 0x3)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/server.go:17 +0x2be
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.login(0x45b02e0, 0xc0001aa540, 0xc0001c1a00)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/route_auth.go:34 +0xae
+net/http.HandlerFunc.ServeHTTP(0x4550f40, 0x45b02e0, 0xc0001aa540, 0xc0001c1a00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47d3620, 0x45b02e0, 0xc0001aa540, 0xc0001c1a00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010a000, 0x45b02e0, 0xc0001aa540, 0xc0001c1a00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0001f60a0, 0x45b0de0, 0xc000190d80)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2969 +0x36c
+2021/03/19 17:47:50 server.go:3095: http: panic serving [::1]:59508: template: login.html:1: unexpected "}}" in define clause
+goroutine 69 [running]:
+net/http.(*conn).serve.func1(0xc0002120a0)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d06e0, 0xc0000993b0)
+	/usr/local/Cellar/go/1.15.2/libexec/src/runtime/panic.go:975 +0x3e9
+text/template.Must(...)
+	/usr/local/Cellar/go/1.15.2/libexec/src/text/template/helper.go:23
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.generateHTML(0x45b02e0, 0xc0001aa700, 0x0, 0x0, 0xc000189b28, 0x3, 0x3)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/server.go:17 +0x2be
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.login(0x45b02e0, 0xc0001aa700, 0xc0001c1c00)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/route_auth.go:34 +0xae
+net/http.HandlerFunc.ServeHTTP(0x4550f40, 0x45b02e0, 0xc0001aa700, 0xc0001c1c00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47d3620, 0x45b02e0, 0xc0001aa700, 0xc0001c1c00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010a000, 0x45b02e0, 0xc0001aa700, 0xc0001c1c00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002120a0, 0x45b0de0, 0xc000190f40)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2969 +0x36c
+2021/03/19 17:47:50 server.go:3095: http: panic serving [::1]:59509: template: login.html:1: unexpected "}}" in define clause
+goroutine 70 [running]:
+net/http.(*conn).serve.func1(0xc000212140)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d06e0, 0xc0000994d0)
+	/usr/local/Cellar/go/1.15.2/libexec/src/runtime/panic.go:975 +0x3e9
+text/template.Must(...)
+	/usr/local/Cellar/go/1.15.2/libexec/src/text/template/helper.go:23
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.generateHTML(0x45b02e0, 0xc00010a540, 0x0, 0x0, 0xc000053b28, 0x3, 0x3)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/server.go:17 +0x2be
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.login(0x45b02e0, 0xc00010a540, 0xc00007fb00)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/route_auth.go:34 +0xae
+net/http.HandlerFunc.ServeHTTP(0x4550f40, 0x45b02e0, 0xc00010a540, 0xc00007fb00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47d3620, 0x45b02e0, 0xc00010a540, 0xc00007fb00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010a000, 0x45b02e0, 0xc00010a540, 0xc00007fb00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000212140, 0x45b0de0, 0xc000026b80)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2969 +0x36c
+2021/03/19 17:47:50 server.go:3095: http: panic serving [::1]:59510: template: login.html:1: unexpected "}}" in define clause
+goroutine 72 [running]:
+net/http.(*conn).serve.func1(0xc0002121e0)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d06e0, 0xc000012660)
+	/usr/local/Cellar/go/1.15.2/libexec/src/runtime/panic.go:975 +0x3e9
+text/template.Must(...)
+	/usr/local/Cellar/go/1.15.2/libexec/src/text/template/helper.go:23
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.generateHTML(0x45b02e0, 0xc00010a700, 0x0, 0x0, 0xc000053b28, 0x3, 0x3)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/server.go:17 +0x2be
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.login(0x45b02e0, 0xc00010a700, 0xc00007ff00)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/route_auth.go:34 +0xae
+net/http.HandlerFunc.ServeHTTP(0x4550f40, 0x45b02e0, 0xc00010a700, 0xc00007ff00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47d3620, 0x45b02e0, 0xc00010a700, 0xc00007ff00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010a000, 0x45b02e0, 0xc00010a700, 0xc00007ff00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0002121e0, 0x45b0de0, 0xc000026dc0)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2969 +0x36c
+2021/03/19 17:47:55 server.go:3095: http: panic serving [::1]:59524: template: login.html:1: unexpected "}}" in define clause
+goroutine 88 [running]:
+net/http.(*conn).serve.func1(0xc0000bb180)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d06e0, 0xc0000127e0)
+	/usr/local/Cellar/go/1.15.2/libexec/src/runtime/panic.go:975 +0x3e9
+text/template.Must(...)
+	/usr/local/Cellar/go/1.15.2/libexec/src/text/template/helper.go:23
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.generateHTML(0x45b02e0, 0xc0002061c0, 0x0, 0x0, 0xc000054b28, 0x3, 0x3)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/server.go:17 +0x2be
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.login(0x45b02e0, 0xc0002061c0, 0xc000250400)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/route_auth.go:34 +0xae
+net/http.HandlerFunc.ServeHTTP(0x4550f40, 0x45b02e0, 0xc0002061c0, 0xc000250400)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47d3620, 0x45b02e0, 0xc0002061c0, 0xc000250400)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010a000, 0x45b02e0, 0xc0002061c0, 0xc000250400)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000bb180, 0x45b0de0, 0xc000026f40)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2969 +0x36c
+2021/03/19 17:47:55 server.go:3095: http: panic serving [::1]:59525: template: login.html:1: unexpected "}}" in define clause
+goroutine 89 [running]:
+net/http.(*conn).serve.func1(0xc0000bb220)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d06e0, 0xc0000996f0)
+	/usr/local/Cellar/go/1.15.2/libexec/src/runtime/panic.go:975 +0x3e9
+text/template.Must(...)
+	/usr/local/Cellar/go/1.15.2/libexec/src/text/template/helper.go:23
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.generateHTML(0x45b02e0, 0xc00010a7e0, 0x0, 0x0, 0xc000053b28, 0x3, 0x3)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/server.go:17 +0x2be
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.login(0x45b02e0, 0xc00010a7e0, 0xc000101f00)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/route_auth.go:34 +0xae
+net/http.HandlerFunc.ServeHTTP(0x4550f40, 0x45b02e0, 0xc00010a7e0, 0xc000101f00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47d3620, 0x45b02e0, 0xc00010a7e0, 0xc000101f00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010a000, 0x45b02e0, 0xc00010a7e0, 0xc000101f00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc0000bb220, 0x45b0de0, 0xc0000cf340)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2969 +0x36c
+2021/03/19 17:47:55 server.go:3095: http: panic serving [::1]:59526: template: login.html:1: unexpected "}}" in define clause
+goroutine 79 [running]:
+net/http.(*conn).serve.func1(0xc000212280)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1801 +0x147
+panic(0x44d06e0, 0xc0000997c0)
+	/usr/local/Cellar/go/1.15.2/libexec/src/runtime/panic.go:975 +0x3e9
+text/template.Must(...)
+	/usr/local/Cellar/go/1.15.2/libexec/src/text/template/helper.go:23
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.generateHTML(0x45b02e0, 0xc0002062a0, 0x0, 0x0, 0xc000054b28, 0x3, 0x3)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/server.go:17 +0x2be
+_/Users/k-15/Documents/Go/ToDo/src/app/controllers.login(0x45b02e0, 0xc0002062a0, 0xc000250b00)
+	/Users/k-15/Documents/Go/ToDo/src/app/controllers/route_auth.go:34 +0xae
+net/http.HandlerFunc.ServeHTTP(0x4550f40, 0x45b02e0, 0xc0002062a0, 0xc000250b00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2042 +0x44
+net/http.(*ServeMux).ServeHTTP(0x47d3620, 0x45b02e0, 0xc0002062a0, 0xc000250b00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2417 +0x1ad
+net/http.serverHandler.ServeHTTP(0xc00010a000, 0x45b02e0, 0xc0002062a0, 0xc000250b00)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2843 +0xa3
+net/http.(*conn).serve(0xc000212280, 0x45b0de0, 0xc0000272c0)
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+	/usr/local/Cellar/go/1.15.2/libexec/src/net/http/server.go:2969 +0x36c
