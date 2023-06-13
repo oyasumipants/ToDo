@@ -1,0 +1,21 @@
+name: test
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target Environment'
+        required: true
+        default: 'stg'
+        type: choice
+        options:
+          - prd
+          - stg
+          - dev
+
+jobs:
+  apply:
+    runs-on: ubuntu-22.04
+    name: terraform apply for ${{ github.event.inputs.environment }}
+    steps:
+      - run: echo "test"
