@@ -1,4 +1,6 @@
 name: terraform plan
+run-name: terraform plan [${{ github.event.inputs.environment }}/${{ github.event.inputs.resource }}]
+    steps:
 
 on:
   workflow_dispatch:
