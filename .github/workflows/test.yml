@@ -24,6 +24,6 @@ on:
 jobs:
   apply:
     runs-on: ubuntu-22.04
-    name: terraform plan ${{ github.event.inputs.environment }}/${{ github.event.inputs.resource }}
+    name: terraform plan [${{ github.event.inputs.environment }}/${{ github.event.inputs.resource }}]
     steps:
       - run: echo "test"
