@@ -1,4 +1,4 @@
-name: test
+name: terraform plan
 
 on:
   workflow_dispatch:
