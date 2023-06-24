@@ -12,10 +12,18 @@ on:
           - prd
           - stg
           - dev
+      resource:
+        description: 'Target Resource'
+        required: true
+        type: choice
+        options:
+          - database
+          - ecs
+          - network
 
 jobs:
   apply:
     runs-on: ubuntu-22.04
-    name: terraform apply for ${{ github.event.inputs.environment }}
+    name: terraform apply for ${{ github.event.inputs.environment }}/${{ github.event.inputs.resource }}
     steps:
       - run: echo "test"
